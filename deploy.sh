@@ -81,7 +81,7 @@ install_odoo() {
 
     # Apply configurations
     echo -e "${GREEN}[6/6] Applying Kubernetes configurations...${NC}"
-    for file in postgres-pvc.yaml postgres-configmap.yaml postgres-deployment.yaml \
+    for file in postgres-configmap.yaml postgres-pvc.yaml postgres-deployment.yaml \
                 postgres-service.yaml odoo-deployment.yaml odoo-service.yaml; do
         if [ -f "resources/$file" ]; then
             echo -e "Applying ${YELLOW}${file}${NC}..."

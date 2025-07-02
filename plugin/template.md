@@ -6,15 +6,13 @@
 
 ## 🧹 Overview
 
-&#x20;is an Odoo plugin that . It enhances Odoo functionality by providing \<key features/benefits>.
+School module is an Odoo plugin templaate that contains the basic files needed for an Odoo module (model, view, manifest, security).
 
 ## 📦 Features
 
-- ✅ \<Feature 1>
-- ✅ \<Feature 2>
-- ✅ \<Feature 3>
-- ✅ Fully compatible with Odoo&#x20;
-- ✅&#x20;
+- ✅ Fully compatible with Odoo 16
+- ✅ Fully functional Students CRUD (Create, Read, Edit, Delete)
+
 
 ## 🚀 Installation
 
@@ -36,45 +34,32 @@ git clone https://github.com/<your-org>/<odoo-module>.git
 --addons-path=/path/to/your/custom/addons,/path/to/this/module
 ```
 
+Or simply add the module folder to the modules folder in the files of Odoo
+
 ### 4. Restart Odoo and update the apps list
 
-```bash
-# Restart Odoo and go to Apps > Update Apps List
+Restart your Odoo installation, if its by command line simply stop and re-run the start command like this
+```
+python odoo-bin -r odoo -w odoopassword --addons-path=addons,modules -d odoo -i base
 ```
 
 ### 5. Install the module
 
 Search for  in the Apps menu and click **Install**.
 
-## ⚙️ Configuration
-
-After installation:
-
-1. Navigate to **Settings** >&#x20;
-2. Configure the following:
-   -
-   -
-
 ## 🧪 Usage
 
 To use this module:
 
-- Go to&#x20;
-- Click&#x20;
-- Follow the flow to&#x20;
+- Go to topbar and go to `School Management` option
 
-### Example:
-
-```python
-# Optional Python usage or XML example if the module exposes APIs or views
-```
 
 ## 🧰 Development
 
 ### Code structure
 
 ```
-<module_name>/
+school/
 ├── __manifest__.py         # Module metadata
 ├── __init__.py             # Python package init
 ├── models/                 # Business logic
@@ -83,22 +68,6 @@ To use this module:
 ├── controllers/            # HTTP controllers (optional)
 └── data/                   # Preloaded data (optional)
 ```
-
-### Linting and formatting
-
-This module uses:
-
-- `flake8` for linting
-- `black` for formatting
-
-```bash
-black .
-flake8 .
-```
-
-### Tests
-
-Coming soon / Use Odoo test framework if applicable.
 
 ## 📄 License
 
